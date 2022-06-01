@@ -1,0 +1,15 @@
+{
+  "name": "Chrome Test Features",
+  "description": "Chrome Test Features.",
+  "version": "1.1",
+  "manifest_version": 3,
+  "permissions": ["scripting", "tabs", "webRequest"],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "action": {
+    "default_title": "My Action",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
